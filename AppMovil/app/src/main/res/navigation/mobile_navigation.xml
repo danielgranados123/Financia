@@ -22,4 +22,14 @@
         android:name="aplicacion.movil.financia.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/fragment_recursos"
+        android:name="aplicacion.movil.financia.fragment_recursos"
+        android:label="Recursos"
+        tools:layout="@layout/fragment_recursos" />
+    <fragment
+        android:id="@+id/fragment_ajustes"
+        android:name="aplicacion.movil.financia.fragment_ajustes"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes" />
 </navigation>
