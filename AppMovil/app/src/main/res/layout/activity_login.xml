@@ -151,8 +151,8 @@
 
     <Button
         android:id="@+id/btnIngresarLogin"
-        android:layout_width="329dp"
-        android:layout_height="42dp"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
         android:background="@drawable/ic_plaintext"
         android:backgroundTint="#5F1CA8"
         android:fontFamily="@font/poppins_bold"
