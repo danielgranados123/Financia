@@ -6,6 +6,5 @@
     <item name="android:layout_alignParentRight">true</item>
     <item name="android:layout_alignParentTop">true</item>
     <item name="android:layout_alignParentBottom">true</item>
-    <item name="android:background">@drawable/rectangle_1</item>
 </style>
 </resources>
