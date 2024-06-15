@@ -1,18 +1,27 @@
+//Tabla para diferenciar los tipos de usuario. Pueden ser Usuarios Normales o Administradores (quienes tienen sus privilegios)
+create table tbTipoUsuario(
+    UUID_TipoUsuario varchar2(50) primary key,
+    nombre varchar2(20)
+);
+
+//Tabla para almacenar los usuarios
 create table tbUsuarios(
-idUsuario int primary key,
+UUID_Usuario varchar2(50) primary key,
 nombre varchar2(100),
 correo varchar2(100),
-contraseña varchar2(100),
+contraseña varchar2(50),
 huella BLOB
 );
 
+//Tabla para definir las clasificaciones de los gastos e ingresos. (Alimentacion, transporte, etc.)
 create table tbClasificaciones(
-idClasificacion int primary key,
+UUID_CLASIFICACIONES int primary key,
 nombre varchar2(100)
 );
 
+//Tabla para identificar los tipos de gastos e ingresos del usuario en el presupuesto. (Fijo o variable)
 create table tbTipoGastoIngreso(
-idTipoGastoIngreso int primary key,
+UUID_TipoGastoIngreso int primary key,
 nombre varchar2(100)
 );
 
