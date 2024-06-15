@@ -75,7 +75,7 @@
         app:srcCompat="@drawable/cerdoderecha" />
 
     <EditText
-        android:id="@+id/txtUsuario"
+        android:id="@+id/txtNombreDeUsuario"
         android:layout_width="337dp"
         android:layout_height="60dp"
         android:layout_marginBottom="76dp"
@@ -92,7 +92,7 @@
         app:layout_constraintVertical_bias="0.037" />
 
     <EditText
-        android:id="@+id/txtContraseña"
+        android:id="@+id/txtCorreoElectronico"
         android:layout_width="337dp"
         android:layout_height="60dp"
         android:layout_marginBottom="76dp"
