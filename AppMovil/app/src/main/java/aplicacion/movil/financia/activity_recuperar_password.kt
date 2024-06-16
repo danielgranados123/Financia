@@ -16,7 +16,8 @@ import kotlin.random.Random
 class activity_recuperar_password : AppCompatActivity() {
 
     //Creamos una estancia de la clase conexion
-
+    private var connectSql = ConnectSql()
+    private lateinit var correo: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -60,7 +61,9 @@ class activity_recuperar_password : AppCompatActivity() {
                 Toast.makeText(this, "Error ${ex.toString()}", Toast.LENGTH_SHORT).show()
             }
             //Cambiamos de pantalla
-            val intent = Intent()
+            val intent = Intent(this, activity_verificacion::class.java)
+            intent.putExtra("usuarioIngresado", txtUsuarioRecuperar.text.toString())
+            startActivity(intent)
          }
     }
 }
