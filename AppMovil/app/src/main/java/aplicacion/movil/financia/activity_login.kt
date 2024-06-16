@@ -2,17 +2,29 @@ package aplicacion.movil.financia
 
 import android.content.Intent
 import android.os.Bundle
+<<<<<<< HEAD
 import android.widget.Toast
+=======
+import android.widget.Button
+import android.widget.EditText
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+<<<<<<< HEAD
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.security.MessageDigest
 import java.util.UUID
+=======
+import aplicacion.movil.financia.data.model.Conexion
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 
 class activity_login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +36,7 @@ class activity_login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+<<<<<<< HEAD
 
         //Creo la función para encriptar la contraseña
         fun hashSHA256(input: String): String {
@@ -60,10 +73,36 @@ class activity_login : AppCompatActivity() {
                         println("contraseña $contraseniaEncriptada")
                     }
 
+=======
+        val txtNombredeUsuario = findViewById<EditText>(R.id.txtNombreDeUsuario)
+        val  txtCorreoElectronico = findViewById<EditText>(R.id.txtCorreoElectronico)
+        val btnIngresarLogin = findViewById<Button>(R.id.btnIngresarLogin)
+
+        btnIngresarLogin.setOnClickListener {
+            val pantallaPrincipal = Intent(this, registro::class.java)
+            GlobalScope.launch(Dispatchers.IO) {
+                val objConexion = Conexion().cadenaConexion()
+                val comprobarUsuario = objConexion?.prepareStatement("SELECT * FROM tbUsuarios WHERE corrreoUsuario = ? AND clave = ?")!!
+                comprobarUsuario.setString(1, txtCorreoElectronico.text.toString())
+                comprobarUsuario.setString(2, txtNombredeUsuario.text.toString())
+                val resultado = comprobarUsuario.executeQuery()
+                if (resultado.next()) {
+                    startActivity(pantallaPrincipal)
+                } else {
+                    println("Usuario no encontrado, verifique las credenciales")
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
                 }
             }
         }
 
+<<<<<<< HEAD
+=======
+        btnIngresarLogin.setOnClickListener {
+            //Cambio de pantalla
+            val pantallaRegistrarme = Intent(this, registro::class.java)
+            startActivity(pantallaRegistrarme)
+        }
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 
     }
 }

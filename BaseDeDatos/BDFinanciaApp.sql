@@ -4,8 +4,11 @@ create table tbTipoUsuario(
     nombreTipoUsuario varchar2(20) not null unique
 );
 
+<<<<<<< HEAD
 drop table tbTipoUsuario
 
+=======
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 //Tabla para almacenar los usuarios
 create table tbUsuarios(
     UUID_Usuario varchar2(50) primary key,
@@ -13,7 +16,11 @@ create table tbUsuarios(
     nombreUsuario varchar2(100) not null unique,
     correoUsuario varchar2(100) not null,
     contrasenaUsuario varchar2(50) not null,
+<<<<<<< HEAD
     huellaUsuario blob ,
+=======
+    huellaUsuario blob unique,
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     
     ----Llave foranea---
     constraint fk_UUID_TipoUsuario foreign key (UUID_TipoUsuario) references tbTipoUsuario (UUID_TipoUsuario),
@@ -51,6 +58,7 @@ create table tbTipoGastoIngreso(
 );
 
 //Tabla para identificar la fuente del gasto
+<<<<<<< HEAD
 create table fuenteGasto(
     UUID_FuenteGasto varchar2(50) primary key,
      UUID_Gasto varchar2(50),
@@ -58,12 +66,24 @@ create table fuenteGasto(
     CONSTRAINT fk_fuenteGasto foreign key (UUID_Gasto)References tbGastos(UUID_Gasto)
 );
 
+=======
+create table tbFuenteGasto(
+    UUID_FuenteGasto varchar2(50) primary key,
+    nombreFuenteGasto varchar2(50) not null unique
+);
+
+
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 //Tabla para almacenar los gastos del usuario
 create table tbGastos(
     UUID_Gasto varchar2(50) primary key,
     UUID_Usuario varchar2(50) not null,
     UUID_TipoGastoIngreso varchar2(50) not null,
     UUID_Clasificacion varchar2(50) not null,
+<<<<<<< HEAD
+=======
+    UUID_FuenteGasto varchar2(50) not null,
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     montoGasto number(10,2) not null,
     fechaGasto varchar2(20) not null,
 
@@ -74,7 +94,13 @@ create table tbGastos(
 
     constraint fk_UUID_TipoGastoIngreso foreign key (UUID_TipoGastoIngreso) references tbTipoGastoIngreso (UUID_TipoGastoIngreso),
 
+<<<<<<< HEAD
     constraint fk_UUID_Clasificacion foreign key (UUID_Clasificacion) references tbClasificaciones (UUID_Clasificaciones) 
+=======
+    constraint fk_UUID_Clasificacion foreign key (UUID_Clasificacion) references tbClasificaciones (UUID_Clasificacion),
+    
+    constraint fk_UUID_FuenteGasto foreign key (UUID_FuenteGasto) references tbFuenteGasto (UUID_FuenteGasto) 
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 );
 
 //Tabla para almacenar los ingresos
@@ -91,9 +117,15 @@ create table tbIngresos(
     
     constraint fk_UUID_Usuario1 foreign key (UUID_Usuario) references tbUsuarios (UUID_Usuario),
 
+<<<<<<< HEAD
     constraint fk_UUID_TipoGastoIngreso1 foreign key (UUID_TipoGastoIngreso) references tbTipoGastoIngreso (UUID_TipoGastoIngreso),
 
     constraint fk_UUID_Clasificacion1 foreign key (UUID_Clasificacion) references tbClasificaciones (UUID_Clasificaciones) 
+=======
+    constraint fk_UUID_TipoGastoIngreso foreign key (UUID_TipoGastoIngreso) references tbTipoGastoIngreso (UUID_TipoGastoIngreso),
+
+    constraint fk_UUID_Clasificacion1 foreign key (UUID_Clasificacion) references tbClasificaciones (UUID_Clasificacion) 
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 );
 
 //Tabla para manejar los ahorros
@@ -104,7 +136,11 @@ create table tbAhorros(
     fechaAhorro varchar2(50) not null,
 
 ----Para evitar que el valor de los ahorros sea un número negativo (menor a 0)----
+<<<<<<< HEAD
     constraint chk_montoAhorro_non_negative check (montoAhorro >= 0),
+=======
+    constraint chk_montoIngreso_non_negative check (montoIngreso >= 0),
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     
     constraint fk_UUID_Usuario2 foreign key (UUID_Usuario) references tbUsuarios (UUID_Usuario)
 );
@@ -127,7 +163,11 @@ create table tbDetallesPresupuesto(
     UUID_Ingreso varchar2(50) not null,
     UUID_Ahorro varchar2(50) not null,
     
+<<<<<<< HEAD
     constraint fk_UUID_Presupuesto foreign key (UUID_Presupuesto) references tbPresupuestos(UUID_Presupuesto),
+=======
+    constraint fk_UUID_Presupuesto foreign key (UUUID_Presupuesto) references tbPresupuestos(UUID_Presupuesto),
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     
     constraint fk_UUID_Gasto foreign key (UUID_Gasto) references tbGastos(UUID_Gasto),
 
@@ -145,7 +185,11 @@ create table tbTipoRecursos(
 //Tabla para almacenar los recursos
 create table tbRecursosEducativos(
     UUID_Recurso int primary key,
+<<<<<<< HEAD
     UUID_TipoRecurso int not null unique,
+=======
+    UUID_TipoRecurso varchar2(50) not null unique,
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     tituloRecurso varchar2(50) not null unique,
     descripcionRecurso varchar2(255) not null,
     urlRecurso varchar2(250) not null,
@@ -158,13 +202,21 @@ create table tbRecursosEducativos(
 create table tbValoraciones(
     UUID_Valoracion varchar2(50) primary key,
     UUID_Usuario varchar2(50) not null,
+<<<<<<< HEAD
     UUID_Recurso int not null,
+=======
+    UUID_Recurso varchar2(50) not null,
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     rating number,
     comentarioRecurso varchar2(250),
     fechaValoracion varchar2(50) not null,
     
     constraint fk_UUID_Usuario4 foreign key (UUID_Usuario) references tbUsuarios (UUID_Usuario),
+<<<<<<< HEAD
     constraint fk_UUID_Recurso foreign key (UUID_Recurso) references tbRecursosEducativos (UUID_Recurso)
+=======
+    constraint fk_UUID_Recurso foreign key (UUID_Recurso) references tbRecursos (UUID_Recurso)
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 );
 
 //Tabla para definir metas financieras
@@ -186,7 +238,11 @@ create table tbMetasFinancieras(
 create table tbAsignacionesAhorros(
     UUID_Asignacion varchar(50) primary key,
     UUID_Ahorro varchar(50) not null,
+<<<<<<< HEAD
     UUID_Meta int not null,
+=======
+    UUID_Meta varchar(50) not null,
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
     montoAsignado number(10,2) not null,
     fechaAsignacion varchar2(50) not null,
     
@@ -208,6 +264,7 @@ create table tbNotificaciones(
 
     constraint fk_UUID_Usuario6 foreign key (UUID_Usuario) references tbUsuarios (UUID_Usuario),
 
+<<<<<<< HEAD
     constraint fk_UUID_Gasto1 foreign key (UUID_Gasto) references tbGastos (UUID_Gasto)
 );
 
@@ -218,4 +275,17 @@ create table tbRecursosFavoritos(
 
     constraint fk_UUID_Usuario7 foreign key (UUID_Usuario) references tbUsuarios (UUID_Usuario),
     constraint fk_UUID_Recurso2 foreign key (UUID_Recurso) references tbRecursosEducativos(UUID_Recurso)
+=======
+    constraint fk_UUID_Gasto foreign key (UUID_Gasto) references tbGastos (UUID_Gasto)
+);
+
+//Tabla para que el usuario pueda guardar sus recursos favoritos
+create table tbRecursosFavoritos(
+    UUID_RecursoFavorito int primary key,
+    UUID_Usuario varchar2(50) not null,
+    UUID_Recurso varchar2(50) not null,
+
+    constraint fk_UUID_Usuario7 foreign key (UUID_Usuario) references tbUsuarios (UUID_Usuario),
+    constraint fk_UUID_Recurso foreign key (UUID_Recurso) references tbRecursosEducativos(UUID_Recurso)
+>>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 );
