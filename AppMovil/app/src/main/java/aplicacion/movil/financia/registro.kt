@@ -37,12 +37,10 @@ class registro : AppCompatActivity() {
 
         btnIngresarLogin.setOnClickListener {
             GlobalScope.launch(Dispatchers.IO) {
-                //Creo un objeto de la clase conexion
                 val objConexion = Conexion().cadenaConexion()
 
-                //Creo una variable que contenga un PrepareStatement
                 val crearUsuario =
-                    objConexion?.prepareStatement("INSERT INTO tbUsuarios(UUID_usuario, correoElectronico, clave) VALUES (?, ?, ?)")!!
+                    objConexion?.prepareStatement("INSERT INTO tbUsuarios(UUID_usuario, correoElectronico, contrasena) VALUES (?, ?, ?)")!!
                 crearUsuario.setString(1, UUID.randomUUID().toString())
                 crearUsuario.setString(2, txtNombreDeUsuario.text.toString())
                 crearUsuario.setString(3, txtContraseña.text.toString())
