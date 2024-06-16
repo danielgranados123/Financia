@@ -95,7 +95,6 @@
         android:id="@+id/txtCorreoElectronico"
         android:layout_width="337dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="372dp"
         android:background="@drawable/ic_plaintext"
         android:ems="10"
         android:fontFamily="@font/poppins"
@@ -108,7 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombreDeUsuario"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintVertical_bias="0.126" />
 
     <TextView
         android:id="@+id/textViewContraseña"
