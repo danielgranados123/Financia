@@ -74,7 +74,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtNombreDeUsuario"
+        android:id="@+id/txtUsuarioLogin"
         android:layout_width="337dp"
         android:layout_height="60dp"
         android:background="@drawable/ic_plaintext"
@@ -92,7 +92,7 @@
         app:layout_constraintVertical_bias="0.074" />
 
     <EditText
-        android:id="@+id/txtCorreoElectronico"
+        android:id="@+id/txtClaveLogin"
         android:layout_width="337dp"
         android:layout_height="60dp"
         android:background="@drawable/ic_plaintext"
@@ -106,7 +106,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombreDeUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuarioLogin"
         app:layout_constraintVertical_bias="0.126" />
 
     <TextView
@@ -122,7 +122,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.772"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCorreoElectronico" />
+        app:layout_constraintTop_toBottomOf="@+id/txtClaveLogin" />
 
     <Button
         android:id="@+id/btnIngresarLogin"
@@ -155,7 +155,7 @@
         app:layout_constraintVertical_bias="0.971" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtRegistrarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="148dp"
@@ -186,7 +186,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/cbRecordarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
@@ -197,7 +197,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/txtNombreDeUsuario" />
+        app:layout_constraintTop_toTopOf="@+id/txtUsuarioLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

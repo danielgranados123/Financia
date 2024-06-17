@@ -16,7 +16,7 @@ import kotlin.random.Random
 class activity_recuperar_password : AppCompatActivity() {
 
     //Creamos una estancia de la clase conexion
-    private var connectSql = ConnectSql()
+    /*private var connectSql = ConnectSql()
     private lateinit var correo: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,4 +66,4 @@ class activity_recuperar_password : AppCompatActivity() {
             startActivity(intent)
          }
     }
-}
+}*/

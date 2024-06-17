@@ -24,9 +24,9 @@ class registro : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val txtNombreDeUsuario = findViewById<EditText>(R.id.txtNombreDeUsuario)
+        val txtNombreDeUsuario = findViewById<EditText>(R.id.txtUsuarioLogin)
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
-        val txtCorreoElectronico = findViewById<EditText>(R.id.txtCorreoElectronico)
+        val txtCorreoElectronico = findViewById<EditText>(R.id.txtClaveLogin)
         val btnIngresarLogin = findViewById<Button>(R.id.btnIngresarLogin)
         val btnregistrarse = findViewById<Button>(R.id.btnregistrarse)
 
