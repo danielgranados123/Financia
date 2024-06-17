@@ -1,4 +1,4 @@
-package aplicacion.movil.financia.data.model
+package aplicacion.movil.financia.Modelo
 
 /**
  * Data class that captures user information for logged in users retrieved from LoginRepository

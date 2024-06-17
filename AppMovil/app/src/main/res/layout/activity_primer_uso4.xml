@@ -125,7 +125,7 @@
         app:srcCompat="@drawable/moradopig" />
 
     <Button
-        android:id="@+id/btnSiguienteUsoCuatro"
+        android:id="@+id/btnIngresarBienvenida"
         android:layout_width="148dp"
         android:layout_height="48dp"
         android:background="@drawable/ic_plaintext"

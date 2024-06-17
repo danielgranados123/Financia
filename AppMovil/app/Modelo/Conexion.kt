@@ -1,4 +1,4 @@
-package aplicacion.movil.financia.data.model
+package aplicacion.movil.financia.Modelo
 
 import java.sql.Connection
 import java.sql.DriverManager

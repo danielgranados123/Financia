@@ -2,29 +2,21 @@ package aplicacion.movil.financia
 
 import android.content.Intent
 import android.os.Bundle
-<<<<<<< HEAD
 import android.widget.Toast
-=======
 import android.widget.Button
 import android.widget.EditText
->>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-<<<<<<< HEAD
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.security.MessageDigest
-import java.util.UUID
-=======
-import aplicacion.movil.financia.data.model.Conexion
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
->>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
+
+import aplicacion.movil.financia.Modelo.Conexion
+
 
 class activity_login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,13 +28,13 @@ class activity_login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-<<<<<<< HEAD
 
         //Creo la función para encriptar la contraseña
         fun hashSHA256(input: String): String {
             val bytes = MessageDigest.getInstance("SHA-256").digest(input.toByteArray())
             return bytes.joinToString("") { "%02x".format(it) }
         }
+
         btnIngresar.setOnClickListener {
             //preparo el intent para cambiar a la pantalla de bienvenida
             val pantallaPrincipal = Intent(this, MainActivity::class.java)
