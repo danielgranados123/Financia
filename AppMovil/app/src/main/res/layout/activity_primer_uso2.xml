@@ -8,7 +8,7 @@
     tools:context=".primer_uso2">
 
     <Button
-        android:id="@+id/btnSiguienteUsoDos"
+        android:id="@+id/btnSiguienteUsoTres"
         android:layout_width="148dp"
         android:layout_height="48dp"
         android:background="@drawable/ic_plaintext"

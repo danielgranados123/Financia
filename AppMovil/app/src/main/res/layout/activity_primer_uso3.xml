@@ -7,6 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".primer_uso3">
 
+    <Button
+        android:id="@+id/btnSiguienteUsoTres"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:background="@drawable/ic_plaintext"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Siguiente"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_flechaderecha"
+        app:iconGravity="end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="96dp"
@@ -99,7 +118,7 @@
         app:layout_constraintVertical_bias="0.65" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="te"
@@ -165,7 +184,7 @@
         app:layout_constraintVertical_bias="0.743" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="habitos financieros."
@@ -216,4 +235,45 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.202"
         app:srcCompat="@drawable/amarilloclarodos" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="338dp"
+        android:layout_height="368dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/imagenprimerusotres" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optimiza"
+        android:textColor="#5F1CA7"
+        android:textSize="37sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="132dp"
+        android:text="tu ahorro"
+        android:textColor="#5F1CA6"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
 </androidx.constraintlayout.widget.ConstraintLayout>
