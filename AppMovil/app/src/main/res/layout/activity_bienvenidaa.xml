@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.756" />
 
     <Button
-        android:id="@+id/btnSiguienteUsoUno"
+        android:id="@+id/btnSiguienteUsoDos"
         android:layout_width="173dp"
         android:layout_height="52dp"
         android:background="@drawable/ic_plaintext"
@@ -129,7 +129,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.291"
-        app:layout_constraintStart_toEndOf="@+id/btnSiguienteUsoUno"
+        app:layout_constraintStart_toEndOf="@+id/btnSiguienteUsoDos"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.895" />
 
