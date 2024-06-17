@@ -13,15 +13,26 @@
         android:theme="@style/Theme.Financia"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".splashScreen"
             android:exported="false" />
         <activity
-            android:name=".activity_login"
-=======
-            android:name=".activity_verificacion"
->>>>>>> e8a388b672f1665f9b39a255be4597736f87b7b6
+            android:name=".primer_uso4"
             android:exported="false" />
+        <activity
+            android:name=".primer_uso3"
+            android:exported="false" />
+        <activity
+            android:name=".primer_uso2"
+            android:exported="false" />
+        <activity
+            android:name=".primer_uso1"
+            android:exported="false" />
+        <activity
+            android:name=".primerusouno"
+            android:exported="false" />
+        <activity
+            android:name=".activity_verificacion"
+            android:exported="false"/>
         <activity
             android:name=".activity_recuperar_password"
             android:exported="false" />
