@@ -40,9 +40,6 @@
             android:name=".activity_bienvenida"
             android:exported="false" />
         <activity
-            android:name=".registro"
-            android:exported="false" />
-        <activity
             android:name=".activity_registrarse"
             android:exported="false" />
         <activity

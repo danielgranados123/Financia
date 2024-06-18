@@ -13,7 +13,7 @@ import java.sql.PreparedStatement
 import java.sql.SQLException
 import kotlin.random.Random
 
-class activity_recuperar_password : AppCompatActivity() {
+class activity_recuperar_password : AppCompatActivity() //{
 
     //Creamos una estancia de la clase conexion
     /*private var connectSql = ConnectSql()
