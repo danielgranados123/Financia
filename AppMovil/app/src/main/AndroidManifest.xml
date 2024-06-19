@@ -31,9 +31,6 @@
             android:name=".primerusouno"
             android:exported="false" />
         <activity
-            android:name=".activity_verificacion"
-            android:exported="false"/>
-        <activity
             android:name=".activity_recuperar_password"
             android:exported="false" />
         <activity
