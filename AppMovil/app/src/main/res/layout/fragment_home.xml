@@ -4,43 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
+    android:background="@color/purple_200"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/txtBienvenidaHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
-        android:text="¡Hola, Bryan.exe!"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.058"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
-
-    <TextView
-        android:id="@+id/txtFechaHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Junio 22, 2024"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.095" />
-
     <ImageView
-        android:id="@+id/imageView29"
-        android:layout_width="90dp"
-        android:layout_height="186dp"
-        android:src="@drawable/ic_cerdo_morado"
+        android:id="@+id/imageView30"
+        android:layout_width="422dp"
+        android:layout_height="243dp"
+        android:src="@drawable/ic_circulos_fondo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -48,19 +19,46 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="414dp"
+        android:layout_height="431dp"
+        android:src="@drawable/bg_fondo_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
-        android:id="@+id/txtSaldoActual"
+        android:id="@+id/txtFechaHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:text="Saldo actual:"
-        android:textColor="@color/black"
+        android:text="Junio 22, 2024"
+        android:textColor="#C0B0D6"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/txtBienvenidaHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="¡Hola, Bryan.exe!"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
 
     <TextView
         android:id="@+id/txtSaldoHome"
@@ -68,62 +66,39 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
         android:text="$***"
-        android:textColor="@color/purple_200"
+        android:textColor="@color/white"
         android:textSize="42sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.138" />
 
-    <Button
-        android:id="@+id/btnNuevoGastoHome"
-        android:layout_width="134dp"
-        android:layout_height="130dp"
-        android:background="@drawable/ic_fondo_boton1"
+    <TextView
+        android:id="@+id/txtSaldoActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="50dp"
-        android:paddingTop="60dp"
-        android:paddingRight="10dp"
-        android:text="Nuevo Gasto"
-        android:textAlignment="textEnd"
-        android:textSize="18sp"
+        android:text="Saldo actual:"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toEndOf="@+id/btnNuevoIngresoHome"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
-
-    <Button
-        android:id="@+id/btnNuevoIngresoHome"
-        android:layout_width="134dp"
-        android:layout_height="130dp"
-        android:background="@drawable/ic_fondo_boton1"
-        android:fontFamily="@font/poppins_bold"
-        android:paddingLeft="30dp"
-        android:paddingTop="60dp"
-        android:paddingRight="10dp"
-        android:text="Nuevo Ingreso"
-        android:textAlignment="textEnd"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <Button
         android:id="@+id/btnAnalizarHome"
         android:layout_width="281dp"
-        android:layout_height="130dp"
-        android:background="@drawable/ic_fondo_boton1"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_boton_home"
         android:fontFamily="@font/poppins_bold"
         android:paddingLeft="30dp"
-        android:paddingTop="60dp"
+        android:paddingTop="40dp"
         android:paddingRight="10dp"
-        android:text="Analizar mis resultados"
+        android:text="Analizar\nmis resultados"
+        android:textColor="@color/white"
         android:textAlignment="textEnd"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -136,8 +111,9 @@
         android:id="@+id/btnAprenderHome"
         android:layout_width="281dp"
         android:layout_height="80dp"
-        android:background="@drawable/ic_fondo_boton1"
+        android:background="@drawable/bg_boton_home"
         android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
         android:paddingLeft="30dp"
         android:paddingTop="40dp"
         android:paddingRight="10dp"
@@ -148,6 +124,95 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintVertical_bias="0.932" />
+
+    <Button
+        android:id="@+id/btnPresupuestoHome"
+        android:layout_width="281dp"
+        android:layout_height="120dp"
+        android:background="@drawable/bg_boton_home"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingLeft="30dp"
+        android:paddingTop="60dp"
+        android:paddingRight="10dp"
+        android:text="Empezar\nPresupuesto"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:src="@drawable/ic_notificaciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/btnNuevoHome"
+        android:layout_width="69dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="393dp"
+        android:src="@drawable/ic_nueva_accion"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+    <Button
+        android:id="@+id/btnNuevoIngresoHome"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/bg_fondo_blanco"
+        android:drawableStart="@drawable/ic_ingreso_nuevo"
+        android:drawablePadding="22dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="start|center_vertical"
+        android:paddingStart="8dp"
+        android:text="Ingreso"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Button
+        android:id="@+id/btnNuevoGastoHome"
+        android:layout_width="149dp"
+        android:layout_height="52dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/bg_fondo_blanco"
+        android:drawableStart="@drawable/ic_gasto"
+        android:drawablePadding="35dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="start|center_vertical"
+        android:paddingStart="8dp"
+        android:text="Gasto"
+        android:visibility="invisible"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
