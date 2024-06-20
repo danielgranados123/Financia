@@ -32,4 +32,9 @@
         android:name="aplicacion.movil.financia.fragment_ajustes"
         android:label="Ajustes"
         tools:layout="@layout/fragment_ajustes" />
+    <fragment
+        android:id="@+id/fragment_notificaciones"
+        android:name="aplicacion.movil.financia.fragment_notificaciones"
+        android:label="fragment_notificaciones"
+        tools:layout="@layout/fragment_notificaciones" />
 </navigation>

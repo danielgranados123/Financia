@@ -46,6 +46,16 @@ class activity_login : AppCompatActivity() {
             return bytes.joinToString("") { "%02x".format(it) }
         }
 
+        //Enviar como parametro el nombre del usuario para el inicio
+        /*holder.itemView.setOnClickListener{
+            val context = holder.itemView.context
+            val pantalla = Intent(context, MainActivity::class.java)
+            pantalla.putExtra(
+                "nombre",
+                item.nombre
+            )
+        }*/
+
         btnIngresar.setOnClickListener {
 
             val pantallaPrincipal = Intent(this, MainActivity::class.java)
@@ -63,6 +73,8 @@ class activity_login : AppCompatActivity() {
                 comprobarUsuario.setString(2, contraseniaEncriptada)
                 val resultado = comprobarUsuario.executeQuery()
 
+
+
                 if (resultado.next()) {
                     startActivity(pantallaPrincipal)
                 } else {
@@ -71,7 +83,9 @@ class activity_login : AppCompatActivity() {
                         println("contraseña $contraseniaEncriptada")
                     }
                 }
+
     }
+
         }
     }
 }
