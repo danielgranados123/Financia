@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    app:cardElevation="4dp"
+    app:cardCornerRadius="12dp"
+
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp"
+    app:contentPaddingLeft="2dp"
+    android:backgroundTint="#F0EEF4"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imgMiniaturaRecurso"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_logo" />
+
+        <LinearLayout
+            android:layout_width="242dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTituloCardRecurso"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_weight="0.7"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_vertical"
+                android:text="¡Evita que tu dinero se escape!"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtSubTituloCardRecurso"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="top"
+                android:text="¿Cómo crear un presupuesto fácil y rápido?"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="0.4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDuracion"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="bottom"
+                    android:text="Duración:"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDuracionRecursos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="bottom"
+                    android:text="0:40"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rbValoracion1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="0dp"
+                    android:button="@drawable/valoracion"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+
+                <RadioButton
+                    android:id="@+id/rbValoracion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="0dp"
+                    android:button="@drawable/valoracion"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+
+                <RadioButton
+                    android:id="@+id/rbValoracion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="0dp"
+                    android:button="@drawable/valoracion"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+
+                <RadioButton
+                    android:id="@+id/rbValoracion4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="0dp"
+                    android:button="@drawable/valoracion"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+                <RadioButton
+                    android:id="@+id/rbValoracion5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="0dp"
+                    android:button="@drawable/valoracion"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

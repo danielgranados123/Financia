@@ -1,14 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment_recursos">
+    android:background="@color/purple_200"
+    tools:context=".fragment_recursos" >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="422dp"
+        android:layout_height="243dp"
+        android:src="@drawable/ic_circulos_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="414dp"
+        android:layout_height="481dp"
+        android:src="@drawable/bg_fondo_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/txtSaldoActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Recursos educativos:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/imageView34"
+        android:layout_width="48dp"
+        android:layout_height="39dp"
+        android:src="@drawable/ic_notificaciones"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnVideosRecursos"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/bg_fondo_morado"
+        android:drawableTop="@drawable/ic_videos_recursos"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Videos"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <Button
+        android:id="@+id/btnArticulosRecursos"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginEnd="104dp"
+        android:background="@drawable/bg_fondo_blanco"
+        android:drawableTop="@drawable/ic_articulos"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Artículos"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_200"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toEndOf="@+id/btnVideosRecursos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextBuscar"
+        android:layout_width="310dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_fondo_buscador"
+        android:drawableStart="@drawable/ic_buscador"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Buscar"
+        android:inputType="text"
+        android:paddingStart="6dp"
+        android:textColor="@color/white"
+        android:textColorHint="#F0F0F0"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
