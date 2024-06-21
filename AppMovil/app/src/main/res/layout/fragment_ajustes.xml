@@ -273,6 +273,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <Switch
+            android:id="@+id/stNotificaciones"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:thumb="@drawable/modo_oscuro"
+            android:track="@drawable/modo_oscuro_no"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.484" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -309,6 +324,19 @@
             app:layout_constraintHorizontal_bias="0.336"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/stModoOscuro"
+            android:layout_width="52dp"
+            android:layout_height="32dp"
+            android:thumb="@drawable/modo_oscuro"
+            android:track="@drawable/modo_oscuro_no"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.484" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
