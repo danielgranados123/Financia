@@ -37,4 +37,9 @@
         android:name="aplicacion.movil.financia.fragment_notificaciones"
         android:label="fragment_notificaciones"
         tools:layout="@layout/fragment_notificaciones" />
+    <fragment
+        android:id="@+id/fragment_cuenta"
+        android:name="aplicacion.movil.financia.fragment_cuenta"
+        android:label="fragment_cuenta"
+        tools:layout="@layout/fragment_cuenta" />
 </navigation>
