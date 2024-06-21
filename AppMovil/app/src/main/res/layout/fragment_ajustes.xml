@@ -151,10 +151,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView28"
+            android:id="@+id/imgAyuda"
             android:layout_width="58dp"
             android:layout_height="57dp"
-            android:src="@drawable/ic_logo_redondo"
+            android:src="@drawable/ic_ayuda"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.011"
@@ -162,37 +162,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtNombreUsuarioAjustes"
+            android:id="@+id/txtAyuda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Bryan.exe"
+            android:text="Ayuda"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintHorizontal_bias="0.256"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.148" />
-
-        <TextView
-            android:id="@+id/txtInformacionPersonal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="Información Personal"
-            android:textColor="#525252"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.412"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView29"
+            android:id="@+id/imgAyudaSiguiente"
             android:layout_width="49dp"
             android:layout_height="62dp"
             android:src="@drawable/ic_flecha_ajustes"
@@ -216,10 +200,10 @@
         app:layout_constraintVertical_bias="0.629">
 
         <ImageView
-            android:id="@+id/imageView28"
+            android:id="@+id/imgSeguridad"
             android:layout_width="58dp"
             android:layout_height="57dp"
-            android:src="@drawable/ic_logo_redondo"
+            android:src="@drawable/ic_seguridad"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.011"
@@ -227,37 +211,21 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtNombreUsuarioAjustes"
+            android:id="@+id/txtSeguridad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Bryan.exe"
+            android:text="Seguridad"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.296"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.148" />
-
-        <TextView
-            android:id="@+id/txtInformacionPersonal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="Información Personal"
-            android:textColor="#525252"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.412"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView29"
+            android:id="@+id/imgSeguridadSiguiente"
             android:layout_width="49dp"
             android:layout_height="62dp"
             android:src="@drawable/ic_flecha_ajustes"
@@ -281,10 +249,10 @@
         app:layout_constraintVertical_bias="0.752">
 
         <ImageView
-            android:id="@+id/imageView28"
+            android:id="@+id/imgConfigNotificaciones"
             android:layout_width="58dp"
             android:layout_height="57dp"
-            android:src="@drawable/ic_logo_redondo"
+            android:src="@drawable/ic_config_notificaciones"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.011"
@@ -292,46 +260,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtNombreUsuarioAjustes"
+            android:id="@+id/txtNotificaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Bryan.exe"
+            android:text="Notificaciones"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintHorizontal_bias="0.346"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.148" />
-
-        <TextView
-            android:id="@+id/txtInformacionPersonal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="Información Personal"
-            android:textColor="#525252"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.412"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
-
-        <ImageView
-            android:id="@+id/imageView29"
-            android:layout_width="49dp"
-            android:layout_height="62dp"
-            android:src="@drawable/ic_flecha_ajustes"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -346,10 +286,10 @@
         app:layout_constraintVertical_bias="0.87">
 
         <ImageView
-            android:id="@+id/imageView28"
+            android:id="@+id/imgModoOscuro"
             android:layout_width="58dp"
             android:layout_height="57dp"
-            android:src="@drawable/ic_logo_redondo"
+            android:src="@drawable/ic_modo_oscuro"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.011"
@@ -357,46 +297,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/txtNombreUsuarioAjustes"
+            android:id="@+id/txtModoOscuro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Bryan.exe"
+            android:text="Modo Oscuro"
             android:textColor="@color/black"
-            android:textSize="19sp"
+            android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintHorizontal_bias="0.336"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.148" />
-
-        <TextView
-            android:id="@+id/txtInformacionPersonal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="Información Personal"
-            android:textColor="#525252"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.412"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.74" />
-
-        <ImageView
-            android:id="@+id/imageView29"
-            android:layout_width="49dp"
-            android:layout_height="62dp"
-            android:src="@drawable/ic_flecha_ajustes"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.333" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
