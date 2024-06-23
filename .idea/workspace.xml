@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12ab48c0-9bdf-40cb-bfb7-29d3e15ee81e" name="Changes" comment="" />
+    <list default="true" id="12ab48c0-9bdf-40cb-bfb7-29d3e15ee81e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/AppMovil/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_6_2024_12_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_6_2024_12_42__Changes_.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,14 +30,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Manuel",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/DELL/Desktop/Financia/AppMovil",
+    "last_opened_file_path": "C:/Users/maosorpa/Desktop/Financia",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
