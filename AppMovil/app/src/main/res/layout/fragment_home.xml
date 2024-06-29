@@ -97,7 +97,7 @@
         android:paddingLeft="30dp"
         android:paddingTop="40dp"
         android:paddingRight="10dp"
-        android:text="Analizar mis\nresultados"
+        android:text="Consultar fondo\nde emergencia"
         android:textAlignment="textEnd"
         android:textAllCaps="false"
         android:textColor="@color/white"
