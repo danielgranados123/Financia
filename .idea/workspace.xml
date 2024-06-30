@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12ab48c0-9bdf-40cb-bfb7-29d3e15ee81e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/AppMovil/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppMovil/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_6_2024_12_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_6_2024_12_42__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppMovil/app/src/main/java/aplicacion/movil/financia/recuperarClave.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppMovil/app/src/main/java/enviarCorreo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AppMovil/app/src/main/res/layout/activity_recuperar_clave.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppMovil/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AppMovil/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,22 +37,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "Manuel",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/maosorpa/Desktop/Financia",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Manuel&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maosorpa/Desktop/Financia/AppMovil&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
